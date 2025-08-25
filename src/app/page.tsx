@@ -27,7 +27,7 @@ export default function Home() {
                 -------- <br />
                 About Me <br />
                 -------- <br />
-                Oh hi :{'>'} I am Ken. I'm a metallurgical engineer and I code for fun. <br />
+                Oh hi :&gt; I am Ken. I&apos;m a metallurgical engineer and I code for fun. <br />
                 I make AI things, I like anime and VTubers, I read Murakami books, and I do all sorts of other stuff as well. <br />
                 <br />
               </p>
@@ -64,7 +64,7 @@ export default function Home() {
                 -------- <br />
                 Email me at kenesuexe@gmail.com <br />
                 Message me on Discord: kenesuexe <br />
-                I don't use most social media sites anymore. Sorry. <br />
+                I don&apos;t use most social media sites anymore. Sorry. <br />
                 <br />
               </p>
             )}
@@ -79,7 +79,7 @@ export default function Home() {
           onKeyDown={e => {
             if (e.key === "Enter") {
               if (["about", "portfolio", "contacts", "help"].includes(input)) {
-                setHistory([...history, input as any]);
+                setHistory([...history, input as "about" | "portfolio" | "help" | "contacts"]);
               }
               setInput("");
             }
